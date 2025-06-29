@@ -19,14 +19,14 @@ function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <p className="text-3xl font-bold text-white hover:scale-105 transition-transform duration-200 cursor-pointer">
+                        <p className="text-2xl lg:text-3xl font-bold text-white hover:scale-105 transition-transform duration-200 cursor-pointer">
                             Sam<span className="text-red-500 drop-shadow-sm font-extrabold">BisLight</span>
                         </p>
                     </div>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:block">
-                        <ul className="flex items-center space-x-8">
+                        <ul className="flex items-center space-x-5 lg:space-x-7">
                             {navItems.map((item, index) => (
                                 <li key={item.href}>
                                     <a

@@ -3,18 +3,18 @@ import Section_Title from './Section_Title'
 
 export default function About() {
     return (
-        <div className="max-w-7xl mx-auto px-8 flex flex-col pt-16 gap-14">
+        <div className="max-w-7xl mx-auto px-8 flex flex-col py-10 gap-14">
             <Section_Title title={"About Us"} />
 
-            <div className=' flex flex-row gap-10'>
+            <div className=' flex flex-row flex-wrap gap-10 lg:flex-nowrap'>
                 <img
                     src={team1}
                     alt="The team that makes SamBisLight"
-                    className="w-1/2 object-cover rounded-md"
+                    className="lg:w-1/2 object-cover rounded-md"
                 />
 
-                <div className='w-1/2 flex flex-col text-neutral-600 gap-4'>
-                    <h2 className='text-4xl font-bold text-blue-800'>Ghana's Most Dependable Construction Company.</h2>
+                <div className='lg:w-1/2 flex flex-col text-neutral-600 gap-4'>
+                    <h2 className='lg:text-4xl text-3xl font-bold text-blue-800'>Ghana's Most Dependable Construction Company.</h2>
                     <p>SamBisLight is a private limited liability company incorporated and domiciled in Ghana. Due to
                         sound and effective management policy and practice, the company has earned recognition as a
                         dependable construction company and has also achieved a reputation which is unmatched in the
@@ -33,9 +33,9 @@ export default function About() {
                     </p>
                     <a
                         href="#services"
-                        className="bg-red-600 text-white rounded-md px-3 py-2 self-start"
+                        className="bg-red-600 text-white rounded-md px-3 py-2 self-center lg:self-start"
                     >
-                        Our services
+                        Visit Our services
                     </a>
                 </div>
             </div>
