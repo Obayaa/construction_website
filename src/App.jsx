@@ -9,6 +9,7 @@ import Team from './components/Team';
 function App() {
   return (
     <div className="min-h-screen">
+      
       <Navbar />
       <div className="">
         <section id="home" className="">
@@ -19,7 +20,7 @@ function App() {
           <About />
         </section>
 
-        <section id="achievements" className="min-h-[27rem] p-10 bg-blue-100">
+        <section id="achievements" className="min-h-[27rem] p-10 lg:p-10 bg-blue-100">
           <Achievements />
         </section>
 
@@ -31,12 +32,11 @@ function App() {
           <div>Hello everyone, welcome to projects done</div>
         </section>
 
-        <section id="team" className="min-h-[70vh] p-10 bg-blue-50">
+        <section id="team" className="min-h-[70vh] lg:p-10 pt-20 bg-blue-50">
           <Team />
 
         </section>
-        <section id="contact" className="min-h-screen pt-20 p-10 bg-white text-4xl flex">
-          {/* <div>Contact Section</div> */}
+        <section id="contact" className="min-h-screen pt-20 p-10 bg-white">
           <Contact />
         </section>
 
