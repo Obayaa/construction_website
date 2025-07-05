@@ -5,7 +5,7 @@ import TeamCard from "./Team_Card";
 
 export default function Team() {
     return (
-        <div className="max-w-7xl mx-auto px-8 flex flex-col gap-10">
+        <div className="max-w-7xl mx-auto px-8 flex flex-col gap-10 p7-10">
             <div className="flex flex-col gap-7">
                 <Section_Title title={"Meet Our Team"} />
                 <p className="text-center text-lg">Get to know the dedicated professionals whose expertise and passion drive our company's success.</p>
