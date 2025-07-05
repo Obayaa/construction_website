@@ -10,7 +10,6 @@ export default function Achievements() {
                 <Card value={"50+"} title={"Modern Homes"} />
                 <Card value={"75+"} title={"Happy Clients"} />
                 <Card value={"25+"} title={"Years Experience"} />
-
             </div>
 
         </div>
