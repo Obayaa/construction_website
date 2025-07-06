@@ -19,7 +19,7 @@ export default function About() {
                         alt="The team that makes SamBisLight"
                         className="lg:w-full object-cover rounded-md"
                     />
-                    : <Slide direction='left' className='lg:w-1/2'>
+                    : <Slide direction='left' className='lg:w-1/2' triggerOnce>
                         <img
                             src={team1}
                             alt="The team that makes SamBisLight"
@@ -53,7 +53,7 @@ export default function About() {
                         </a>
 
                     </div> :
-                    <Slide direction='right' className='lg:w-1/2'>
+                    <Slide direction='right' className='lg:w-1/2' triggerOnce>
                         <div className='lg:w-full flex flex-col text-neutral-600 gap-4'>
                             <h2 className='lg:text-4xl text-3xl font-bold text-blue-800'>Ghana's Most Dependable Construction Company.</h2>
                             <p>SamBisLight is a private limited liability company incorporated and domiciled in Ghana. Due to
