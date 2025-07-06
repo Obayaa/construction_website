@@ -20,7 +20,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     {/* Company Info */}
                     <div className="md:col-span-2 lg:col-span-1">
-                        <img src={logo} alt="Sambislight Logo" className="w-24 h-24 bg-white p-2 rounded-full mb-4" />
+                        <img src={logo} alt="Sambislight Logo" className="w-24 h-24 bg-white p-2 rounded-full mb-4 object-contain" />
                         <p className="text-gray-400 text-sm leading-relaxed">
                             A dependable, private limited liability construction company in Ghana, recognized for unmatched quality and timely delivery in all fields of construction.
                         </p>
