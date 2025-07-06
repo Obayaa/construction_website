@@ -20,7 +20,7 @@ function App() {
           <Home />
         </section>
 
-        <section id="about" className="min-h-screen pt-12 pb-8 bg-white scroll-mt-64 md:scroll-mt-0">
+        <section id="about" className="min-h-screen py-16 pb-8 bg-white scroll-mt-64 md:scroll-mt-0">
           <About />
         </section>
 
@@ -28,22 +28,22 @@ function App() {
           <Achievements />
         </section>
 
-        <section id="services" className="min-h-screen py-12 bg-white scroll-mt-56 md:scroll-mt-0">
+        <section id="services" className="min-h-screen py-16 bg-white scroll-mt-56 md:scroll-mt-0">
           <Services />
         </section>
 
-        <section id="projects" className="min-h-screen py-12 bg-gray-50 scroll-mt-56 md:scroll-mt-0">
+        <section id="projects" className="min-h-screen py-16 bg-gray-50 scroll-mt-56 md:scroll-mt-0">
           <Projects />
         </section>
-        <section id="modern-homes" className="min-h-screen py-12 bg-white scroll-mt-56 md:scroll-mt-0">
+        <section id="modern-homes" className="min-h-screen py-16 bg-white scroll-mt-56 md:scroll-mt-0">
           <ModernHomes />
         </section>
 
-        <section id="team" className="min-h-[70vh] py-12 bg-blue-50 scroll-mt-56 md:scroll-mt-0">
+        <section id="team" className="min-h-[70vh] py-16 bg-blue-50 scroll-mt-56 md:scroll-mt-0">
           <Team />
 
         </section>
-        <section id="contact" className="min-h-screen py-12 bg-gray-50 scroll-mt-56 md:scroll-mt-0">
+        <section id="contact" className="min-h-screen py-16 bg-gray-50 scroll-mt-56 md:scroll-mt-0">
           <Contact />
         </section>
 
