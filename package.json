@@ -16,6 +16,7 @@
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
     "react-awesome-reveal": "^4.3.1",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.11"
   },
