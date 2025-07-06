@@ -29,7 +29,7 @@ export default function Contact() {
 
 
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <Section_Title title={"Contact Us"} />
 
             <div className="mt-12 bg-white shadow-xl rounded-2xl overflow-hidden">
