@@ -1,8 +1,8 @@
 export default function Section_Title({ title }) {
     return (
-        <h1
-            className='lg:text-5xl text-3xl md:text-4xl text-center font-bold text-blue-800 border-0 border-b-4 border-b-red-600 pb-3 '>
-            {title}
-        </h1>
+        <div className="text-center my-8">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">{title}</h2>
+            <div className="mt-2 h-1 w-24 bg-red-600 mx-auto rounded"></div>
+        </div>
     )
 }
