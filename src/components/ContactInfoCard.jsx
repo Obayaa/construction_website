@@ -6,9 +6,7 @@ export default function ContactInfoCard({ icon, title, content }) {
             </div>
             <div>
                 <h3 className="text-lg text-gray-600 font-semibold">{title}</h3>
-            {/* Using a div for content allows for more complex elements like links */}
-            {/* The opacity-90 class makes the text slightly less prominent than the title */}
-            <div className=" text-gray-600 opacity-90">{content}</div>
+                <div className=" text-gray-600 opacity-90">{content}</div>
             </div>
         </div>
     );
