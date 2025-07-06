@@ -15,7 +15,7 @@ export function Card({ value, title }) {
     return (
         <Slide direction="left" duration={1000} cascade>
             <div className="bg-red-600 size-48 p-10 rounded-md text-white text-center flex flex-col justify-center gap-4 shadow-lg hover:scale-105 duration-300">
-                <h1 className="lg:text-5xl text-4xl font-black">{value}</h1>
+                <h1 className="lg:text-5xl text-3xl font-black">{value}</h1>
                 <p className="text-xl">{title}</p>
             </div>
         </Slide>
