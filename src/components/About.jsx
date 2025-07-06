@@ -9,7 +9,7 @@ export default function About() {
 
 
     return (
-        <div className="max-w-7xl mx-auto px-8 flex flex-col py-10 gap-14">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col">
             <Section_Title title={"About Us"} />
 
             <div className=' flex flex-row flex-wrap gap-10 lg:flex-nowrap'>
@@ -28,7 +28,7 @@ export default function About() {
                     </Slide>}
                 {isMobile ?
                     <div className='lg:w-full flex flex-col text-neutral-600 gap-4'>
-                        <h2 className='lg:text-4xl text-3xl font-bold text-blue-800'>Ghana's Most Dependable Construction Company.</h2>
+                        <h2 className='lg:text-4xl text-2xl font-bold text-blue-800'>Ghana's Most Dependable Construction Company.</h2>
                         <p>SamBisLight is a private limited liability company incorporated and domiciled in Ghana. Due to
                             sound and effective management policy and practice, the company has earned recognition as a
                             dependable construction company and has also achieved a reputation which is unmatched in the

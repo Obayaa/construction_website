@@ -15,7 +15,7 @@ function Navbar() {
 
     return (
         <nav className="w-full bg-gradient-to-r from-blue-900/95 via-blue-800 to-blue-600 shadow-lg sticky top-0 z-50 backdrop-blur-sm">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
@@ -57,7 +57,7 @@ function Navbar() {
             {/* Mobile Navigation */}
             <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 } overflow-hidden bg-blue-900/95 backdrop-blur-sm`}>
-                <div className="px-4 pb-2 space-y-2">
+                <div className="px-8 py-2 pb-2 space-y-2">
                     {navItems.map((item) => (
                         <a
                             key={item.href}
