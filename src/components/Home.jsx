@@ -11,7 +11,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-black/60 z-0" />
             <div className="relative flex gap-6 flex-col max-w-7xl px-4 lg:px-8 mx-auto text-white justify-center h-screen z-10">
                 {isMobile ?
-                // Mobile
+                    // Mobile
                     <div className="flex gap-6 flex-col">
                         <div className="lg:text-6xl text-3xl md:text-5xl font-bold lg:leading-20">Building Tomorrow's <br /> Ghana Today</div>
                         <p className="text-md lg:text-lg">
@@ -43,9 +43,12 @@ export default function Home() {
                         </Fade>
                         <Fade direction="up" duration={1500}>
                             <div className="flex gap-3 text-lg font-bold">
-                                <button type="button" className="bg-red-600 rounded-md p-1 lg:px-3 lg:py-2">Our services</button>
-                                <button className="border border-white-50 rounded-md p-1 lg:px-3 lg:py-2">Contact Us</button>
-                            </div>
+                                <a href="#services" className="bg-red-600 text-white rounded-md p-1 lg:px-3 lg:py-2 transition-colors duration-300 hover:bg-red-700">
+                                    Our services
+                                </a>
+                                <a href="#contact" className="border border-white text-white rounded-md p-1 lg:px-3 lg:py-2 transition-colors duration-300 hover:bg-white hover:text-blue-900">
+                                    Contact Us
+                                </a>                            </div>
                         </Fade>
                     </div>
                 }
