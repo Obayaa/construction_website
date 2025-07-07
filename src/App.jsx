@@ -16,7 +16,7 @@ function App() {
 
       <Navbar />
       <div className="">
-        <section id="home" className="scroll-mt-56 md:scroll-mt-0">
+        <section id="home" className="min-h-screen">
           <Home />
         </section>
 
