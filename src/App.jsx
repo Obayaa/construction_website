@@ -16,11 +16,11 @@ function App() {
 
       <Navbar />
       <div className="">
-        <section id="home" className="min-h-screen scroll-mt-96 lg:scroll-mt-0">
+        <section id="home" className="min-h-screen">
           <Home />
         </section>
 
-        <section id="about" className="min-h-screen py-16 pb-8 bg-white scroll-mt-96 lg:scroll-mt-0">
+        <section id="about" className="min-h-screen py-16 bg-white">
           <About />
         </section>
 
@@ -28,22 +28,22 @@ function App() {
           <Achievements />
         </section>
 
-        <section id="services" className="min-h-screen py-16 bg-white scroll-mt-96 lg:scroll-mt-0">
+        <section id="services" className={`min-h-screen py-16 bg-white`}>
           <Services />
         </section>
 
-        <section id="projects" className="min-h-screen py-16 bg-gray-50 scroll-mt-96 lg:scroll-mt-0">
+        <section id="projects" className="min-h-screen py-16 bg-gray-50">
           <Projects />
         </section>
-        <section id="modern-homes" className="min-h-screen py-16 bg-white scroll-mt-96 lg:scroll-mt-0">
+        <section id="modern-homes" className="min-h-screen py-16 bg-white">
           <ModernHomes />
         </section>
 
-        <section id="team" className="min-h-[70vh] py-16 bg-blue-50 scroll-mt-96 lg:scroll-mt-0">
+        <section id="team" className="min-h-[70vh] py-16 bg-blue-50">
           <Team />
 
         </section>
-        <section id="contact" className="min-h-screen py-16 bg-gray-50 scroll-mt-96 lg:scroll-mt-0">
+        <section id="contact" className="min-h-screen py-16 bg-gray-50">
           <Contact />
         </section>
 
