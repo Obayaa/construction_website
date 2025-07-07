@@ -76,14 +76,16 @@ function Navbar() {
             </div>
 
             {/* Mobile Navigation */}
-            <div className={`lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden bg-white border-t border-gray-100`}>
+            <div className={`lg:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'opacity-100' : 'max-h-0 opacity-0'} overflow-hidden bg-white border-t border-gray-100`}>
                 <div className="px-8 py-4 space-y-3">
                     {navItems.map((item) => (
                         <a
                             key={item.href}
                             href={item.href}
                             className="block text-gray-700 font-semibold text-lg hover:text-blue-600 hover:bg-gray-50 p-3 rounded-md transition-all duration-200"
-                            onClick={() => setIsMenuOpen(false)}
+                            onClick={() => {
+                                setIsMenuOpen(false)
+                            }}
                         >
                             {item.label}
                         </a>
