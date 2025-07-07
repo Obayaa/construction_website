@@ -20,12 +20,8 @@ function App() {
           <Home />
         </section>
 
-        <section id="about" className="min-h-screen py-16 bg-white">
+        <section id="about" className="min-h-screen py-16 bg-blue-50">
           <About />
-        </section>
-
-        <section id="achievements" className="min-h-[27rem] py-10 bg-blue-100">
-          <Achievements />
         </section>
 
         <section id="services" className={`min-h-screen py-16 bg-white`}>
@@ -35,8 +31,13 @@ function App() {
         <section id="projects" className="min-h-screen py-16 bg-gray-50">
           <Projects />
         </section>
+
         <section id="modern-homes" className="min-h-screen py-16 bg-white">
           <ModernHomes />
+        </section>
+
+        <section id="achievements" className="min-h-[27rem] py-10 bg-blue-100">
+          <Achievements />
         </section>
 
         <section id="team" className="min-h-[70vh] py-16 bg-blue-50">
