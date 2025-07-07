@@ -13,7 +13,7 @@ export default function Achievements() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col">
             <Section_Title title={"Our Achievements"} />
 
-            <div className="flex gap-6 lg:justify-between flex-wrap p-3 justify-center lg:flex-nowrap mt-12">
+            <div className="flex gap-6 lg:justify-between flex-wrap p-3 justify-center lg:flex-nowrap">
                 {achievementsData.map((achievement, index) => (
                     <Card key={index} {...achievement} />
                 ))}
