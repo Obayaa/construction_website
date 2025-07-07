@@ -16,35 +16,35 @@ function App() {
 
       <Navbar />
       <div className="">
-        <section id="home" className="min-h-screen">
+        <section id="home" className="">
           <Home />
         </section>
 
-        <section id="about" className="min-h-screen py-16 bg-blue-50">
+        <section id="about" className=" py-16 bg-blue-50">
           <About />
         </section>
 
-        <section id="services" className={`min-h-screen py-16 bg-white`}>
+        <section id="services" className={`py-16 bg-white`}>
           <Services />
         </section>
 
-        <section id="projects" className="min-h-screen py-16 bg-gray-50">
+        <section id="projects" className=" py-16 bg-gray-50">
           <Projects />
         </section>
 
-        <section id="modern-homes" className="min-h-screen py-16 bg-white">
+        <section id="modern-homes" className=" py-16 bg-blue-100">
           <ModernHomes />
         </section>
 
-        <section id="achievements" className="min-h-[27rem] py-10 bg-blue-100">
+        <section id="achievements" className="min-h-[27rem] py-10 bg-white">
           <Achievements />
         </section>
 
-        <section id="team" className="min-h-[70vh] py-16 bg-blue-50">
+        <section id="team" className="py-16 bg-gray-50">
           <Team />
 
         </section>
-        <section id="contact" className="min-h-screen py-16 bg-gray-50">
+        <section id="contact" className=" py-16 bg-white">
           <Contact />
         </section>
 
