@@ -16,11 +16,11 @@ function App() {
 
       <Navbar />
       <div className="">
-        <section id="home" className="min-h-screen">
+        <section id="home" className="min-h-screen scroll-mt-72 md:scroll-mt-0">
           <Home />
         </section>
 
-        <section id="about" className="min-h-screen py-16 pb-8 bg-white scroll-mt-64 md:scroll-mt-0">
+        <section id="about" className="min-h-screen py-16 pb-8 bg-white scroll-mt-72 md:scroll-mt-0">
           <About />
         </section>
 
