@@ -60,7 +60,7 @@ export default function Services() {
                 <div className="mt-6">
                     <a
                         href="#modern-homes" // This would link to your modern homes gallery section
-                        className="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                        className="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg  hover:bg-blue-700 transition-colors duration-300"
                     >
                         View Available Homes
                     </a>
