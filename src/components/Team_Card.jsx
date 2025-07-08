@@ -1,4 +1,4 @@
-import { Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter } from "lucide-react";
 
 
 export default function TeamCard({ name, position, image, socials }) {
@@ -25,6 +25,11 @@ export default function TeamCard({ name, position, image, socials }) {
                     {socials.twitter && (
                         <a href={socials.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-sky-500 transition-colors duration-300">
                             <Twitter size={20} />
+                        </a>
+                    )}
+                    {socials.instagram && (
+                        <a href={socials.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-sky-500 transition-colors duration-300">
+                            <Instagram size={20} />
                         </a>
                     )}
                 </div>

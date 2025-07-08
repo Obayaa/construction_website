@@ -4,14 +4,17 @@ import { MapPin, Mail, Phone, ArrowRight, Twitter, Linkedin, Instagram, Facebook
 // --- IMAGE IMPORTS ---
 // NOTE: Please ensure these image paths are correct in your project structure.
 import logo from '../assets/logo.jpeg';
+import tiktok from '../assets/tiktok.svg'
 
 export function Footer() {
+
     const quickLinks = ["home", "about", "services", "projects", "modern-homes", "team", "contact"];
     const socialLinks = [
-        { icon: <Twitter size={20} />, href: "#", name: "Twitter" },
-        { icon: <Linkedin size={20} />, href: "#", name: "LinkedIn" },
-        { icon: <Facebook size={20} />, href: "#", name: "Facebook" },
-        { icon: <Instagram size={20} />, href: "#", name: "Instagram" },
+        { icon: <img src={tiktok} alt='Tiktok Icon' className='h-5 w-5 invert' />, href: "https://www.tiktok.com/@sambislightcons25?_t=ZM-8xpL6DeQd2G&_r=1", name: "Twitter" },
+        { icon: <Facebook size={20} />, href: "https://www.facebook.com/profile.php?id=100086129597160&mibextid=LQQJ4d", name: "Facebook" },
+        { icon: <img src={tiktok} alt='Tiktok Icon' className='h-5 w-5 invert' />, href: "https://www.tiktok.com/@sambislightconstruction6?_t=ZM-8xqrtGvsoPF&_r=1", name: "Twitter" },
+        { icon: <Instagram size={20} />, href: "https://www.instagram.com/sambislight_construction_ltd?igsh=NHN5a3NvOHhsaXBt&utm_source=qr", name: "Instagram" },
+        // { icon: <Linkedin size={20} />, href: "#", name: "LinkedIn" },
     ];
 
     return (

@@ -15,8 +15,8 @@ export default function Team() {
             position: "Project Manager",
             image: bismark,
             socials: {
-                linkedin: '#',
-                twitter: '#',
+                // linkedin: '#',
+                // twitter: '#',
             }
         },
         {
@@ -24,7 +24,7 @@ export default function Team() {
             position: "Head of Engineers",
             image: sam,
             socials: {
-                linkedin: '#',
+                instagram: 'https://www.instagram.com/samuelnartey51?igsh=cmw1NmcyYXpiM29h&utm_source=qr',
             }
         },
         {
@@ -32,7 +32,7 @@ export default function Team() {
             position: "Quantity Surveyor",
             image: "https://placehold.co/200x200/f59e0b/ffffff?text=BA",
             socials: {
-                twitter: '#',
+                // twitter: '#',
             }
         },
         {
@@ -40,8 +40,8 @@ export default function Team() {
             position: "Architect",
             image: "https://placehold.co/200x200/10b981/ffffff?text=RF",
             socials: {
-                linkedin: '#',
-                twitter: '#',
+                // linkedin: '#',
+                // twitter: '#',
             }
         }
     ];
