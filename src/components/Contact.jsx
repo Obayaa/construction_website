@@ -6,9 +6,11 @@ import { useState } from 'react';
 
 
 export default function Contact() {
+    const [status, setStatus] = useState('');
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        subject: '',
         message: ''
     });
 
@@ -22,9 +24,32 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form Submitted:", formData);
-        alert("Thank you for your message! We'll get back to you soon.");
-        setFormData({ name: '', email: '', message: '' });
+        setStatus("sending");
+
+        // Prepare the template parameters from your form state
+        // These names (user_name, user_email) must match the variables in your EmailJS template
+        const templateParams = {
+            user_name: formData.name,
+            user_email: formData.email,
+            message: formData.message,
+        };
+
+        emailjs.send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            templateParams,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+            .then(() => {
+                setStatus('success');
+                setFormData({ name: '', email: '', message: '' }); // Clear form on success
+                setTimeout(() => setStatus(''), 4000); // Reset status message after 4 seconds
+            })
+            .catch((error) => {
+                console.error('FAILED...', error);
+                setStatus('error');
+                setTimeout(() => setStatus(''), 4000); // Reset status message after 4 seconds
+            });
     };
 
 
@@ -92,6 +117,15 @@ export default function Contact() {
                                 onChange={handleChange}
                             />
                             <FormField
+                                id="subject"
+                                label="Subject"
+                                type="text"
+                                placeholder="e.g., Quote for a New Project"
+                                icon={<MessageSquare size={20} />}
+                                value={formData.subject}
+                                onChange={handleChange}
+                            />
+                            <FormField
                                 id="message"
                                 label="Message"
                                 type="textarea"
@@ -103,10 +137,14 @@ export default function Contact() {
                             <div>
                                 <button
                                     type="submit"
-                                    className="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                    disabled={status === 'sending'}
+                                    className="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:bg-gray-400 disabled:cursor-not-allowed"
                                 >
-                                    Submit
+                                    {status === 'sending' ? 'Sending...' : 'Submit'}
                                 </button>
+                                {/* Submission status message */}
+                                {status === 'success' && <p className="text-green-600 font-semibold text-center">Thank you for your message!</p>}
+                                {status === 'error' && <p className="text-red-600 font-semibold text-center">Something went wrong. Please try again.</p>}
                             </div>
                         </form>
                     </div>
