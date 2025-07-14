@@ -66,10 +66,10 @@ export default function Team() {
     return (
             <div className="max-w-7xl mx-auto px-4 lg:px-8">
                 {/* Conditionally apply Fade animation to the title */}
-                {isMobile ? titleSection : <Fade direction="down">{titleSection}</Fade>}
+                {isMobile ? titleSection : <Fade triggerOnce direction="down">{titleSection}</Fade>}
 
                 {/* Conditionally apply cascading Fade animation to the team cards */}
-                {isMobile ? teamGrid : <Fade direction="up" cascade damping={0.1}>{teamGrid}</Fade>}
+                {isMobile ? teamGrid : <Fade triggerOnce direction="up" cascade damping={0.1}>{teamGrid}</Fade>}
             </div>
     )
 }
