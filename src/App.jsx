@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import './App.css'
 import About from './components/About';
 import Achievements from './components/Achievements';
@@ -13,6 +14,24 @@ import Team from './components/Team';
 function App() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        {/* Main Title for the entire website */}
+        <title>Sambislight Construction - Expert Building & Renovation in Accra, Ghana</title>
+
+        {/* Main Meta Description for the entire website */}
+        <meta
+          name="description"
+          content="Sambislight Construction offers comprehensive building, renovation, civil engineering, and project management services in Accra, Ghana. Explore our projects, team, and contact us for quality construction solutions."
+        />
+
+        {/* You can add other global meta tags here if needed */}
+        <meta name="keywords" content="sambislight, construction, building, renovation, modern homes, project management, Accra, Ghana, Sunyani, Kumasi, residential, commercial, infrastructure, builders, contractors" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        {/* Add any other global meta tags or links here, like favicons */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </Helmet>
+
 
       <Navbar />
       <div className="">
