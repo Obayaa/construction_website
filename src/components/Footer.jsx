@@ -81,7 +81,9 @@ export function Footer() {
                 </div>
                 <div className="mt-10 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
                     <p>&copy; {new Date().getFullYear()} Sambislight Construction Co. Ltd. All Rights Reserved.</p>
+                    <p className="mt-1">Website designed by <a href="http://www.linkedin.com/in/dora-appiah" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Dora Appiah</a></p>
                 </div>
+
             </div>
         </footer>
     );
