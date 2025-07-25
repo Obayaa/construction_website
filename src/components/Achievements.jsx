@@ -3,10 +3,10 @@ import Section_Title from "./Section_Title"
 
 export default function Achievements() {
     const achievementsData = [
-        { value: "150+", title: "Projects Completed" },
-        { value: "50+", title: "Modern Homes" },
-        { value: "75+", title: "Happy Clients" },
-        { value: "25+", title: "Years Experience" },
+        { value: "20+", title: "Projects Completed" },
+        { value: "15+", title: "Modern Homes" },
+        { value: "20+", title: "Happy Clients" },
+        { value: "4+", title: "Years Experience" },
     ];
 
     return (
