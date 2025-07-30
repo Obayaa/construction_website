@@ -1,15 +1,16 @@
 import { Helmet } from 'react-helmet-async';
 import './App.css'
-import About from './components/About';
 import Achievements from './components/Achievements';
-import Contact from './components/Contact';
 import { Footer } from './components/Footer';
-import Home from './components/Home';
-import ModernHomes from './components/ModernHomes';
 import Navbar from './components/Navbar';
-import Projects from './components/Projects';
-import Services from './components/Services';
-import Team from './components/Team';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Projects from './pages/Projects';
+import ModernHomes from './pages/ModernHomes';
+import Team from './pages/Team';
+import Contact from './pages/Contact';
+
 
 function App() {
   return (

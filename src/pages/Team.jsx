@@ -1,7 +1,8 @@
-import Section_Title from "./Section_Title";
+// import Section_Title from "./Section_Title";
 import bismark from "../assets/bismark2.jpeg";
 import sam from "../assets/sam.jpeg";
-import TeamCard from "./Team_Card";
+import Section_Title from "../components/Section_Title";
+import TeamCard from "../components/Team_Card";
 import { useIsMobile } from "../hooks/useMobile";
 import { Fade } from "react-awesome-reveal";
 
@@ -64,12 +65,12 @@ export default function Team() {
     );
 
     return (
-            <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                {/* Conditionally apply Fade animation to the title */}
-                {isMobile ? titleSection : <Fade triggerOnce direction="down">{titleSection}</Fade>}
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+            {/* Conditionally apply Fade animation to the title */}
+            {isMobile ? titleSection : <Fade triggerOnce direction="down">{titleSection}</Fade>}
 
-                {/* Conditionally apply cascading Fade animation to the team cards */}
-                {isMobile ? teamGrid : <Fade triggerOnce direction="up" cascade damping={0.1}>{teamGrid}</Fade>}
-            </div>
+            {/* Conditionally apply cascading Fade animation to the team cards */}
+            {isMobile ? teamGrid : <Fade triggerOnce direction="up" cascade damping={0.1}>{teamGrid}</Fade>}
+        </div>
     )
 }

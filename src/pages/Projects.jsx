@@ -7,9 +7,9 @@ import site2 from '../assets/site2.jpeg';
 import site3 from '../assets/site3.jpeg';
 import site4 from '../assets/site4.jpeg';
 import site5 from '../assets/site5.jpeg';
-import ImageModal from './ImageModal';
+import ImageModal from '../components/ImageModal';
 import { useIsMobile } from '../hooks/useMobile';
-import Section_Title from './Section_Title';
+import Section_Title from '../components/Section_Title';
 
 
 // A reusable card for each project, now with an onClick handler

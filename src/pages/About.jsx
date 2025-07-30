@@ -1,5 +1,5 @@
 import team1 from '../assets/team1.jpeg';
-import Section_Title from './Section_Title';
+import Section_Title from '../components/Section_Title';
 import { Slide } from "react-awesome-reveal";
 import { useIsMobile } from '../hooks/useMobile';
 

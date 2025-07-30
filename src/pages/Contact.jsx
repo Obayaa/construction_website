@@ -1,8 +1,8 @@
 import emailjs from "@emailjs/browser";
-import ContactInfo from "./ContactInfo";
-import Section_Title from "./Section_Title";
 import { useState } from "react";
-import ContactForm from "./ContactForm";
+import Section_Title from "../components/Section_Title";
+import ContactInfo from "../components/ContactInfo";
+import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
     const [status, setStatus] = useState("");

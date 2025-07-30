@@ -1,7 +1,7 @@
 import { CheckCircle, Home, Building } from 'lucide-react';
 // Make sure the path to your flyer image is correct
 import flyer from '../assets/flyer.jpeg';
-import Section_Title from './Section_Title';
+import Section_Title from '../components/Section_Title';
 import { Fade, Slide } from "react-awesome-reveal";
 import { useIsMobile } from '../hooks/useMobile';
 

@@ -13,8 +13,8 @@ import modern7 from '../assets/modern7.jpeg';
 import modern8 from '../assets/modern8.jpeg';
 import modern9 from '../assets/modern9.jpeg';
 import { useIsMobile } from '../hooks/useMobile';
-import Section_Title from './Section_Title';
-import ImageModal from './ImageModal';
+import Section_Title from '../components/Section_Title';
+import ImageModal from '../components/ImageModal';
 
 
 // --- MODERN HOMES COMPONENT ---
