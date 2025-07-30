@@ -9,7 +9,7 @@ import site4 from '../assets/site4.jpeg';
 import site5 from '../assets/site5.jpeg';
 import ImageModal from '../components/ImageModal';
 import { useIsMobile } from '../hooks/useMobile';
-import Section_Title from '../components/Section_Title';
+import SectionTitle from '../components/SectionTitle';
 
 
 // A reusable card for each project, now with an onClick handler
@@ -67,7 +67,7 @@ export default function Projects() {
 
     const titleSection = (
         <div className="flex flex-col mb-6">
-            <Section_Title title={"Our Projects"} />
+            <SectionTitle title={"Our Projects"} />
             <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto">
                 Explore a selection of our finest work, showcasing our commitment to quality, innovation, and client satisfaction.
             </p>

@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import Section_Title from "../components/Section_Title";
+import SectionTitle from "../components/SectionTitle";
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";
 
@@ -55,7 +55,7 @@ export default function Contact() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-            <Section_Title title={"Contact Us"} />
+            <SectionTitle title={"Contact Us"} />
 
             <div className="mt-12 bg-white shadow-xl rounded-2xl overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2">

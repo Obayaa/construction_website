@@ -13,14 +13,14 @@ import modern7 from '../assets/modern7.jpeg';
 import modern8 from '../assets/modern8.jpeg';
 import modern9 from '../assets/modern9.jpeg';
 import { useIsMobile } from '../hooks/useMobile';
-import Section_Title from '../components/Section_Title';
+import SectionTitle from '../components/SectionTitle';
 import ImageModal from '../components/ImageModal';
 
 
 // --- MODERN HOMES COMPONENT ---
 const HomeCard = ({ image, title, onImageClick }) => (
     <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" onClick={() => onImageClick(image)}>
-        <img src={image} alt={title} className="w-full h-80 object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/600x400/e2e8f0/4a5568?text=Image'; }}/>
+        <img src={image} alt={title} className="w-full h-80 object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110" onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/600x400/e2e8f0/4a5568?text=Image'; }} />
         <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/70 to-transparent pointer-events-none">
             <h3 className="text-xl font-bold text-white transition-transform duration-300 group-hover:-translate-y-2">{title}</h3>
         </div>
@@ -45,7 +45,7 @@ export default function ModernHomes() {
 
     const titleSection = (
         <div className="flex flex-col mb-5">
-            <Section_Title title={"Modern Homes For Sale"} />
+            <SectionTitle title={"Modern Homes For Sale"} />
             <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto">Discover our collection of exquisitely designed modern homes, built with precision and ready for you to move in.</p>
         </div>
     );
@@ -59,9 +59,9 @@ export default function ModernHomes() {
     return (
         // As requested, this component does not have its own <section> tag.
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-             {isMobile ? titleSection : <Fade direction="down" triggerOnce>{titleSection}</Fade>}
-             {isMobile ? homesGrid : <Fade direction="up" cascade damping={0.1} triggerOnce>{homesGrid}</Fade>}
-             <ImageModal src={selectedImage} onClose={() => setSelectedImage(null)} />
+            {isMobile ? titleSection : <Fade direction="down" triggerOnce>{titleSection}</Fade>}
+            {isMobile ? homesGrid : <Fade direction="up" cascade damping={0.1} triggerOnce>{homesGrid}</Fade>}
+            <ImageModal src={selectedImage} onClose={() => setSelectedImage(null)} />
         </div>
     );
 }

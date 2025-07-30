@@ -1,5 +1,5 @@
 import { Card } from "./Card"
-import Section_Title from "./Section_Title"
+import SectionTitle from "./SectionTitle"
 
 export default function Achievements() {
     const achievementsData = [
@@ -11,7 +11,7 @@ export default function Achievements() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col">
-            <Section_Title title={"Our Achievements"} />
+            <SectionTitle title={"Our Achievements"} />
 
             <div className="flex gap-6 lg:justify-between flex-wrap p-3 justify-center lg:flex-nowrap">
                 {achievementsData.map((achievement, index) => (

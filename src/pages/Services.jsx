@@ -1,7 +1,7 @@
 import { CheckCircle, Home, Building } from 'lucide-react';
 // Make sure the path to your flyer image is correct
 import flyer from '../assets/flyer.jpeg';
-import Section_Title from '../components/Section_Title';
+import SectionTitle from '../components/SectionTitle';
 import { Fade, Slide } from "react-awesome-reveal";
 import { useIsMobile } from '../hooks/useMobile';
 
@@ -84,14 +84,14 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
             {isMobile ? (
                 <>
-                    <Section_Title title="Our Services" />
+                    <SectionTitle title="Our Services" />
                     <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto my-6">
                         From initial design to final construction, we provide comprehensive solutions to bring your vision to life with quality and precision.
                     </p>
                 </>
             ) : (
                 <Fade direction="down">
-                    <Section_Title title="Our Services" />
+                    <SectionTitle title="Our Services" />
                     <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mt-4 mb-16">
                         From initial design to final construction, we provide comprehensive solutions to bring your vision to life with quality and precision.
                     </p>

@@ -1,5 +1,5 @@
 import team1 from '../assets/team1.jpeg';
-import Section_Title from '../components/Section_Title';
+import SectionTitle from '../components/SectionTitle';
 import { Slide } from "react-awesome-reveal";
 import { useIsMobile } from '../hooks/useMobile';
 
@@ -10,7 +10,7 @@ export default function About() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col">
-            <Section_Title title={"About Us"} />
+            <SectionTitle title={"About Us"} />
 
             <div className=' flex flex-row flex-wrap gap-10 lg:flex-nowrap'>
                 {isMobile ?
