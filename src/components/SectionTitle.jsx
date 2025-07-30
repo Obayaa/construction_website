@@ -1,4 +1,4 @@
-export default function Section_Title({ title }) {
+export default function SectionTitle({ title }) {
     return (
         <div className="text-center my-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">{title}</h2>
